@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Landing from './pages/Landing';
+import Footer from './components/Footer';
+import Login from './pages/Login';
+import { Dashboard } from '@mui/icons-material';
+import UserDashboard from './pages/UserDashboard';
+import ViewMoreProjects from './pages/ViewMoreProjects';
+import Header from './components/Header';
+import Page404 from './pages/Page404';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+<Routes>
+  <Route path='/' element={<Landing></Landing>}></Route>
+  <Route path='/login' element={<Login></Login>}></Route>
+  <Route path='/dashboard' element={<UserDashboard></UserDashboard>}></Route>
+  <Route path='/view' element={<ViewMoreProjects></ViewMoreProjects>}></Route>
+  <Route path='/*' element={<Page404></Page404>}></Route>
+</Routes>
+<Footer></Footer>
     </div>
   );
 }

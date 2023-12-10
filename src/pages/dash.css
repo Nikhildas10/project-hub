@@ -1,0 +1,122 @@
+.projectSection{
+    background-color: white;
+    width: 53rem;
+    height: 30rem;
+    overflow: auto;
+    margin-top: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+    padding: 20px;
+}
+.projectSection h1,.userSection h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.addProject{
+    align-items: center;
+}
+.addProject button{
+border: 0;
+background-color: #202120;
+color: white;
+font-size: 12px;
+padding: 5px 5px;
+border-radius: 3px;
+}
+.addProject p{
+    margin: 0;
+    margin-right: 20px;
+}
+
+.userSection{
+       background-color: white;
+    width: 25rem;
+    height: 30rem;
+    margin-top: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+}
+.userSection img{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+.userSection p{
+    margin: 0;
+}
+
+.userSection hr{
+    margin: 0;
+}
+.userSection button{
+    padding: 5px;
+    font-size: 15px;
+    border: 0;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+
+/* .addedProjects{
+
+} */
+.projectSingle{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding:0 1rem ;
+    margin-top: 1rem;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.skeleton{
+    /* border: 1px solid black; */
+    /* display: flex;
+    justify-content: space-between; */
+    padding:0 1rem ;
+    height: 20px;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+.addedProjects p{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.back {
+ display: flex;
+ height: 3em;
+ width: 100px;
+ align-items: center;
+ justify-content: center;
+ background-color: #eeeeee4b;
+ border-radius: 3px;
+ letter-spacing: 1px;
+ transition: all 0.2s linear;
+ cursor: pointer;
+ border: none;
+ background: #fff;
+}
+
+.back > svg {
+ margin-right: 5px;
+ margin-left: 5px;
+ font-size: 20px;
+ transition: all 0.4s ease-in;
+}
+
+.back:hover > svg {
+ font-size: 1.2em;
+ transform: translateX(-5px);
+}
+
+.back:hover {
+ box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+ transform: translateY(-2px);
+}
